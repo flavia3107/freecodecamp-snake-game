@@ -1,12 +1,18 @@
 body {
+	height: 100vh;
+	margin: 0;
+}
+
+main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
-	margin: 0;
 	font-family: "VT323", monospace;
+	position: relative;
+	height: 90%;
 }
 
+main,
 body,
 .snake {
 	background-color: #414141;
@@ -40,13 +46,12 @@ body,
 
 #instruction-text {
 	position: absolute;
-	top: 60%;
 	color: #333;
 	width: 300px;
 	text-align: center;
 	text-transform: capitalize;
 	padding: 30px;
-	margin: 0;
+	margin: 21rem auto 0;
 }
 
 .scores {
@@ -86,4 +91,55 @@ body,
 
 #logo {
 	position: absolute;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo > img {
+	height: 35px;
+}
+
+.logo-txt {
+	padding-left: 7px;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	align-items: flex-start;
+}
+
+.logo-img {
+	width: 1.5rem;
+	margin-right: 3px;
+}
+
+.logo-txt h1,
+.logo-txt span {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	letter-spacing: 4px;
+	color: #fff;
+}
+
+.logo-txt h1 {
+	font-weight: bolder;
+	font-size: 0.85rem;
+}
+
+.logo-txt span {
+	font-weight: lighter;
+	font-size: 0.75rem;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+}
+
+a {
+	text-decoration: none;
 }
